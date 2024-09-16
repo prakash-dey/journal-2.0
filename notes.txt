@@ -1,0 +1,32 @@
+Edge cases
+1. What if different strike prices has been placed for buying ?
+2. Continuous buying or Continuous selling
+3. Status canceled
+
+SO the flow will be 
+These are the features for MVP 
+
+1. Upload the csv file - > Convert it into JSON - done
+2. Read the existing JSON database - done 
+3. Append the JSON data into prexisting JSON file - done
+4. Save the JSON file in local machine - done
+3. Change the JSON object structure into required structure (Planning needed)(let's keep the raw data the canceled one will also be there then) 
+4. Use the JSON to generate the table
+
+Version 1
+1. Remember the latest file name and on upload show a validation message also show message if any file is not uploaded
+1. Use date range filter
+2. Customizable table header options
+
+
+Version 2
+1. Integrate chart
+
+
+[
+    {"date":{
+        trades:[{},{}],
+        "day_p_l" : 567890,
+        "length":length
+}
+}]

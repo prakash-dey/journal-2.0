@@ -1,0 +1,41 @@
+<!-- Index.html file -->
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trading Journal : Order book</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="myForm" class="flex">
+        <div class="flex">
+          <div class="disp_blc">
+            <img src="../../icons/csv.png" alt="" srcset="">
+            <input type="file" id="csvFile" accept=".csv" />
+          </div>
+          <div>
+            <img src="../../icons/json-file.png" alt="" srcset="">
+            <input type="file" id="jsonFile" accept=".json" />
+          </div>
+        </div>
+        <div>
+          <select name="environment" id="environment">
+            <option value="testing" >Testing</option>
+            <option value="production" selected>Prdouction</option>
+          </select>
+        </div>
+        <div>
+          <button>Generate</button>
+        </div>
+      </form>
+      <div class="p_n_l_div mg-top"></div>
+      <table class="mg-top">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="./testing.js"></script>
+  </body>
+</html>
