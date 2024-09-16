@@ -253,7 +253,7 @@ function generate_journal_rows(master_json_data) {
       }
 
       // Calculate and display the running tally of P/L
-      tally_pl += row_obj.profit_or_loss ? Number(row_obj.profit_or_loss) : 0;
+      tally_pl += row_obj.profit_or_loss != "--" ? Number(row_obj.profit_or_loss) : 0;
       tds += `<td>${tally_pl.toFixed(2)}</td>`; // Display the cumulative P/L
 
       if (index === 0) {
